@@ -14,11 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', [
-        'name' => 'Mizar Haristo',
-        'role' => 'Administrator'
-    ]);
+    return view('home');
 });
+
 Route::get('/about', function () {
     return view('about');
 });
